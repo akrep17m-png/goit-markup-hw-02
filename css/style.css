@@ -94,6 +94,7 @@ SECTION ONE */
     justify-content: flex-start;
     flex-direction: row;
     gap: 10px;
+    cursor: pointer;
 }
 
 .page-main .section-one .order-button:hover {
