@@ -1,6 +1,6 @@
 body {
     /* Typography */
-    font-family: "Roboto", "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
     font-size: 16px;
@@ -25,17 +25,17 @@ ol {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: #4d5ae5;
 }
 
 .page-header
 .nav-list
 .logo-header
-span {
-    color: #4d5ae5;
+.accent {
+    color: #2e2f42;
 }
 
 .page-header
@@ -47,35 +47,26 @@ span {
 
 .page-header
 .nav-list
-.link:hover {
+.link:hover,
+.page-header 
+.nav-list 
+.link:focus {
     color: #404BBF;
 }
 
-.page-header 
-.nav-list 
-.link:active {
-    background-image: linear-gradient(#404BBF, #404BBF);
-    background-size: 100% 4px;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    border-radius: 2px;
+.page-header .info-list {
+    font-style: normal;
 }
-
 .page-header 
 .info-list 
-ul 
-li 
-a {
-    font-style: normal;
+.info {
     text-decoration: none;
     color: #434455;    
 }
 
 .page-header 
 .info-list 
-ul 
-li 
-a:hover {
+.info:hover {
     color: #404BBF;
 }
 /* 
@@ -92,23 +83,19 @@ SECTION ONE
 .title {
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     text-align: center;
+    letter-spacing: 0.02em;
     color: #fff;
 }
 
 .page-main 
 .section-one 
 .order-button {
-    /* BOX MODEL */
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);    
-    border-radius: 4px;
-    padding: 16px 32px;
-    width: 169px;
-    height: 56px;
-
     /* TYPOGRAPHY */
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
     color: #fff;
@@ -117,7 +104,10 @@ SECTION ONE
 
 .page-main 
 .section-one 
-.order-button:hover {
+.order-button:hover,
+.page-main 
+.section-one 
+.order-button:focus {
     background-color: #404BBF;
 }
 /* 
@@ -126,6 +116,7 @@ SECTION TWO
 .page-main 
 .section-two 
 .section-title {
+    letter-spacing: 0.02em;
     color: #fff;    
 }
 
@@ -150,9 +141,16 @@ SECTION TEAM
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+}
+.page-main 
+.section-team 
+.team {
+    background-color: #fff;
 }
 
 .page-main 
@@ -161,6 +159,7 @@ SECTION TEAM
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
 }
@@ -178,7 +177,9 @@ PORTFOLIO SECTION
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
 }
@@ -189,6 +190,7 @@ PORTFOLIO SECTION
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #2e2f42;
 }
 /* 
@@ -200,17 +202,19 @@ PAGE FOOTER
 
 .page-footer 
 .logo {
+    font-weight: 700;
+    font-size: 18px;
     font-family: "Raleway", sans-serif;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: #4d5ae5;
 }
 
 .page-footer 
 .logo 
-span {
-    color: #4d5ae5;
+.accent {
+    color: #fff;
 }
 
 .page-footer 
