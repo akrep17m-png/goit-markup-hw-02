@@ -50,7 +50,7 @@ ol {
 .link:hover,
 .page-header 
 .nav-list 
-.link:focus {
+.link:active {
     color: #404BBF;
 }
 
@@ -126,6 +126,7 @@ SECTION TWO
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #2e2f42;
 }
 /*
@@ -214,7 +215,7 @@ PAGE FOOTER
 .page-footer 
 .logo 
 .accent {
-    color: #fff;
+    color: #f4f4fd;
 }
 
 .page-footer 
