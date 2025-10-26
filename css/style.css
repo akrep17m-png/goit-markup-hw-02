@@ -50,13 +50,15 @@ ol {
 .link:hover,
 .page-header 
 .nav-list 
-.link:active {
-    color: #404BBF;
+.link:focus {
+    color: #404bbf;
 }
 
-.page-header .info-list {
+.page-header 
+.info-list {
     font-style: normal;
 }
+
 .page-header 
 .info-list 
 .info {
@@ -66,8 +68,11 @@ ol {
 
 .page-header 
 .info-list 
-.info:hover {
-    color: #404BBF;
+.info:hover,
+.page-header
+.info-list 
+.info:focus {
+    color: #404bbf;
 }
 /* 
 MAIN SECTION
