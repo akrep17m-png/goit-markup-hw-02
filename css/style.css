@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   /* Typography */
   font-family: 'Roboto', sans-serif;
@@ -9,15 +15,42 @@ body {
   font-weight: 400;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
+  outline: none;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* HEADER STYLE */
 
 .logo-header {
@@ -61,14 +94,14 @@ ol {
 
 /* 
 MAIN SECTION
-SECTION ONE 
+SECTION HERO 
 */
 
-.page-main .section-one {
+.section-hero {
   background-color: #2e2f42;
 }
 
-.page-main .section-one .title {
+.hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -77,7 +110,7 @@ SECTION ONE
   color: #fff;
 }
 
-.page-main .section-one .order-button {
+.order-button {
   /* TYPOGRAPHY */
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -88,19 +121,19 @@ SECTION ONE
   background: #4d5ae5;
 }
 
-.page-main .section-one .order-button:hover,
-.page-main .section-one .order-button:focus {
+.order-button:hover,
+.order-button:focus {
   background-color: #404bbf;
 }
 /* 
-SECTION TWO 
+SECTION FEATURES 
 */
-.page-main .section-two .section-title {
+.section-title {
   letter-spacing: 0.02em;
   color: #fff;
 }
 
-.page-main .section-two .list-title {
+.features-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -110,11 +143,11 @@ SECTION TWO
 /*
 SECTION TEAM
 */
-.page-main .section-team {
+.section-team {
   background: #f4f4fd;
 }
 
-.page-main .section-team .section-title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -123,11 +156,12 @@ SECTION TEAM
   text-align: center;
   color: #2e2f42;
 }
-.page-main .section-team .team {
+
+.team-item {
   background-color: #fff;
 }
 
-.page-main .section-team .team-name {
+.team-specialist {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -136,13 +170,13 @@ SECTION TEAM
   color: #2e2f42;
 }
 
-.page-main .section-team .team-text {
+.team-job-title {
   text-align: center;
 }
 /* 
 PORTFOLIO SECTION 
 */
-.page-main .portfolio .portfolio-title {
+.portfolio-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -152,7 +186,7 @@ PORTFOLIO SECTION
   color: #2e2f42;
 }
 
-.page-main .portfolio .port-title {
+.portfolio__item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -166,7 +200,7 @@ PAGE FOOTER
   background-color: #2e2f42;
 }
 
-.page-footer .logo {
+.logo-footer {
   font-weight: 700;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
@@ -176,10 +210,10 @@ PAGE FOOTER
   color: #4d5ae5;
 }
 
-.page-footer .logo .accent {
+.footer-accent {
   color: #f4f4fd;
 }
 
-.page-footer .footer-text {
+.footer-text {
   color: #f4f4fd;
 }
